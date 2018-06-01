@@ -1,0 +1,48 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="android:Theme.Black.NoTitleBar.Fullscreen">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">#aabbcc</item>-->
+        <!--<item name="colorPrimaryDark">#ddeeff</item>-->
+        <!--&lt;!&ndash;<item name="android:editTextStyle">@style/CustomEditText</item>&ndash;&gt;-->
+    <!--</style>-->
+
+    <style name="progress" parent="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:minHeight">1dp</item>
+        <item name="android:maxHeight">1dp</item>
+        <item name="android:mirrorForRtl">true</item>
+        <item name="android:progressDrawable">@drawable/progress_download</item>
+    </style>
+    <style name="default_dialog_style">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowEnterAnimation">@anim/scale_enter</item>
+        <item name="android:windowExitAnimation">@anim/scale_exit</item>
+        <item name="android:radius">5dp</item>
+    </style>
+
+    <style name="VerticalLine">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/line_gray</item>
+    </style>
+
+    <style name="HorizontalLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/line_gray</item>
+    </style>
+
+
+</resources>
